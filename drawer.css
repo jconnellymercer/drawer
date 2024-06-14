@@ -1,0 +1,845 @@
+#drawer {
+    background-color: #C00686;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: block;
+    text-align: left;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    border-top: solid #ffffff 1px;
+    border-left: 1px solid #ffff;
+    border-bottom: none;
+    border-right: none;
+    padding: 15px 13px 13px 13px;
+    gap: 0px;
+    border-radius: 8px 0px 0px 0px;
+}
+
+#drawer img {
+    float: right;
+    max-height: 55px;
+    color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    right: 15px;
+}
+
+.contact-phone {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px var(--bs-offcanvas-padding-x);
+    position: fixed;
+    background: #820361;
+}
+
+.contact-phone p {
+    font-family: Merriweather !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: right !important;
+    color: #ffffff;
+    margin-bottom: 0 !important;
+}
+
+.contact-phone a,
+.contact-phone .number {
+    color: #ffffff;
+    text-decoration: underline;
+    font-family: IBM Plex Sans !important;
+}
+
+.offcanvas-header svg {
+    margin: -5px -5px 0 -5px;
+    vertical-align: top;
+
+}
+
+.offcanvas-header .btn-close {
+    --bs-btn-close-opacity: 0.5;
+    --bs-btn-close-hover-opacity: 0.75;
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-btn-close-focus-opacity: 1;
+    --bs-btn-close-disabled-opacity: 0.25;
+    box-sizing: content-box;
+    width: 1rem;
+    height: 1rem;
+    background: transparent var(--bs-btn-close-bg) center / 1em auto no-repeat;
+    border: 0;
+    border-radius: .375rem;
+    opacity: var(--bs-btn-close-opacity);
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.offcanvas-header .btn-close,
+.offcanvas-header .btn-close:hover {
+    opacity: 1;
+}
+
+.offcanvas {
+    background: transparent;
+    color: #ffffff;
+}
+
+.offcanvas-body {
+    background: #820361;
+    padding-bottom: 40px;
+}
+
+.offcanvas-body h3 {
+    font-family: Merriweather;
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 38.57px;
+    text-align: left;
+    margin-bottom: .5rem;
+}
+
+.offcanvas-body p,
+.offcanvas-body p:last-child {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#offcanvasBottom1 p.call {
+    margin: 1rem 0;
+}
+
+#offcanvasBottom,
+#offcanvasBottom1,
+#offcanvasBottom2 {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    left: auto;
+    width: 100%;
+}
+
+/* Viewport height fix for iOS and Android */
+@supports (height: 100dvh) {
+	#offcanvasBottom,
+	#offcanvasBottom1,
+	#offcanvasBottom2 {
+		height: 100dvh;
+	}
+}
+
+.admin-bar #offcanvasBottom,
+.admin-bar #offcanvasBottom1,
+.admin-bar #offcanvasBottom2 {
+    top: var(--wp-admin--admin-bar--height);
+    height: calc(100vh - var(--wp-admin--admin-bar--height));
+}
+
+#drawer .col-10 {
+    padding-top: 7px;
+}
+
+.offcanvas-header {
+    background: #C00686;
+    padding: 13px 13px 8px 13px;
+    border-radius: 8px 0px 0px 0px;
+    border-top: #FFFFFF solid 1px;
+    border-left: #FFFFFF solid 1px;
+    min-height: 58px;
+}
+
+.btn-close {
+    --bs-btn-close-bg: none;
+}
+
+.drawer-tile {
+    background: #F3F4F6;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    opacity: 100% !important;
+}
+
+#offcanvasBottom2 .drawer-tile {
+    background: transparent;
+    color: #000000;
+    padding: 0;
+}
+
+#offcanvasBottom2 .drawer-tile h3 {
+    color: #ffffff;
+    font-style: normal;
+}
+
+
+#offcanvasBottom2 .new-placeholder,
+#offcanvasBottom2 .wForm ::placeholder,
+#offcanvasBottom2 .wForm ::-webkit-input-placeholder {
+    color: #ffffff;
+    font-family: IBM Plex Sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17.29px;
+    text-align: left;
+}
+
+.wFormContainer .wForm .inputWrapper ::placeholder {
+    color: #ffffff !important;
+}
+
+#offcanvasBottom2 .wForm,
+#offcanvasBottom2 .wForm form {
+    padding: 0;
+    background: transparent;
+}
+
+#offcanvasBottom2 .wForm .inputWrapper input[type=text],
+#offcanvasBottom2 .wForm .inputWrapper input[type=time],
+#offcanvasBottom2 .wForm .inputWrapper input[type=number],
+#offcanvasBottom2 .wForm .inputWrapper input[type=url],
+#offcanvasBottom2 .wForm .inputWrapper input[type=email],
+#offcanvasBottom2 .wForm .inputWrapper input[type=password] {
+    width: 100% !important;
+    background: #630349;
+    border: none;
+    border-bottom: solid #C00686 1px;
+    padding: 15px 10px 10px 10px;
+    color: #ffffff;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    height: auto;
+}
+
+#offcanvasBottom2 .wForm .inputWrapper input#tfa_3[type=text],
+#offcanvasBottom2 .wForm .inputWrapper input#tfa_4[type=text],
+#offcanvasBottom2 .wFormContainer .wForm #tfa_19-D .inputWrapper {
+    min-width: 0 !important;
+    max-width: 100% !important;
+}
+
+#offcanvasBottom2 .wForm textarea {
+    width: 100% !important;
+    background: #630349;
+    border: none;
+    border-bottom: solid #C00686 1px;
+    padding: 15px 10px 10px 10px;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+
+
+#offcanvasBottom2 .wForm .inputWrapper {
+    width: 100% !important;
+}
+
+.drawer-tile img {
+    max-width: 46px;
+    margin-bottom: 10px;
+}
+
+.drawer-tile .row {
+    align-items: center;
+}
+
+.drawer-tile button {
+    padding: 16px;
+    border: 1px;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    border: 1px solid #C00686 !important;
+    background: transparent;
+    color: #C00686;
+    width: 100%;
+}
+
+.drawer-tile button:hover {
+    border: 1px solid #C00686 !important;
+    background: transparent;
+    color: #C00686;
+    width: 100%;
+}
+
+.drawer-tile h3 {
+    font-family: Merriweather;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 34.58px;
+    color: #C00686;
+
+}
+
+.drawer-tile p {
+    font-family: IBM Plex Sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17.29px;
+    text-align: left;
+}
+
+.simplebar-mask {
+    display: none !important;
+}
+
+.offcanvas-body .btn,
+.offcanvas-body .btn:hover {
+    color: #ffffff;
+
+}
+
+.offcanvas-footer {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.offcanvas-footer span {
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#thankYouMessage svg,
+.call-ty svg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#thankYouMessage p,
+.call-ty p {
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.call-ty .ty {
+    font-family: Merriweather;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 47.88px;
+    text-align: center;
+}
+
+#thankYouMessage .browse,
+.call-ty .browse {
+    cursor: pointer;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    max-width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    background: #ffffff !important;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    margin-bottom: 15px;
+    width: 100%;
+    min-height: 55px;
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+.input-container label {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-family: IBM Plex Sans;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 17.29px !important;
+    text-align: left;
+    text-transform: none !important;
+}
+
+.input-container input:focus+label,
+.input-container input:not(:placeholder-shown)+label {
+    top: 0px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+    padding: 0;
+    font-family: IBM Plex Sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17.29px;
+    text-align: left;
+
+}
+
+.offcanvas-body .btn.next,
+.offcanvas-body .btn.next:hover {
+    background: #C00686;
+    color: #FFFFFF;
+}
+
+.offcanvas-body .btn.w-full,
+.offcanvas-body .btn.w-full {
+    width: 100% !important;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.offcanvas-header .btn-back {
+    font-size: 1rem !important;
+}
+
+#offcanvasBottom2 .wForm .errMsg {
+    font-size: 13px;
+}
+
+
+#offcanvasBottom2 .captcha br {
+    display: none;
+}
+
+
+#offcanvasBottom2 .wForm .captchaHelp {
+    font-family: IBM Plex Sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17.29px;
+    text-align: left;
+    color: #ffffff;
+    opacity: 1;
+    margin-top: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#offcanvasBottom2 .wForm .primaryAction,
+.wForm .secondaryAction {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    padding: 16px;
+    border-radius: 8px;
+    color: #820361;
+    border: none;
+    background: #fff;
+    margin-top: 0;
+}
+
+#offcanvasBottom2 .wForm .primaryAction[disabled],
+.wForm .secondaryAction[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+#offcanvasBottom2 .divider {
+    border-bottom: 1px solid #C00686;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 15px !important;
+}
+
+#offcanvasBottom2 .captcha {
+    padding-bottom: 0 !important;
+}
+
+#offcanvasBottom2 #disabled-explanation {
+    margin-bottom: 0 !important;
+}
+
+#offcanvasBottom2 .wForm input[type=text]:focus-visible,
+#offcanvasBottom2 .wForm textarea:focus-visible,
+.wForm input[type=time]:focus-visible,
+.wForm input[type=number]:focus-visible,
+.wForm input[type=url]:focus-visible,
+.wForm input[type=email]:focus-visible,
+.wForm input[type=password]:focus-visible,
+.inputWrapper:focus-visible {
+    background-color: #ffffff !important;
+    color: fieldtext !important;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+}
+
+/* Autofill background color for input and textarea */
+.inputWrapper input:-webkit-autofill,
+.inputWrapper input:-webkit-autofill:hover,
+.inputWrapper input:-webkit-autofill:focus,
+.inputWrapper input:-webkit-autofill:active,
+.inputWrapper textarea:-webkit-autofill,
+.inputWrapper textarea:-webkit-autofill:hover,
+.inputWrapper textarea:-webkit-autofill:focus,
+.inputWrapper textarea:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #A03E85 inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+#offcanvasBottom2 .lengthIndicator {
+    font-size: 13px;
+    color: #fff;
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.new-placeholder,
+.new-placeholder {
+    position: absolute;
+    top: 35%;
+    left: 5px;
+    color: #666;
+    pointer-events: none;
+    transition: top 0.3s ease, left 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    /* Added transition properties */
+}
+
+#thankYouMessage,
+.call-ty {
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#thankYouMessage svg,
+.call-ty svg {
+    margin-bottom: 15px;
+}
+
+#thankYouMessage #browse,
+.call-ty #browse {
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+}
+
+#calendly {
+    color: #C00686 !important;
+}
+
+.drawer-tile #calendly:hover {
+    border: 1px solid #C00686 !important;
+    background: transparent;
+    color: #C00686;
+    width: 100%;
+}
+
+.call-ty a {
+    color: #820361;
+}
+
+.offcanvas-body .call-ty p,
+.offcanvas-body .call-ty p:last-child {
+    text-align: center;
+}
+
+#offcanvasBottom2 .wForm .inline div.oneField {
+    width: 100% !important;
+}
+
+
+#offcanvasBottom2 #placeholder,
+#offcanvasBottom2 ::-webkit-input-placeholder {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+#offcanvasBottom2 .inputWrapper:focus+#placeholder,
+#offcanvasBottom2 .inputWrapper:not(:placeholder-shown)+input::-webkit-input-placeholder,
+#offcanvasBottom2 .inputWrapper:focus+#placeholder,
+#offcanvasBottom2 .inputWrapper:not(:placeholder-shown)+input::-webkit-input-placeholder {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+#ready-almost-desktop,
+#ready-almost-mobile,
+#drawer .lg\:inline {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+}
+
+#talk,
+#talk-mobile {
+    font-family: Merriweather;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+
+}
+
+.calendly-ty-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    min-height: 500px;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+    #drawer {
+        width: 48.5%;
+    }
+
+    #offcanvasBottom,
+    #offcanvasBottom1,
+    #offcanvasBottom2 {
+        width: 48.5%;
+    }
+
+    #offcanvasBottom2 .wForm .inline div.oneField {
+        width: 49.5% !important;
+    }
+
+    #thankYouMessage,
+    .call-ty {
+        max-width: 75%;
+    }
+
+    .input-container input {
+        margin-bottom: 0px;
+    }
+
+    .offcanvas-footer {
+        max-width: 200px;
+    }
+
+    #offcanvasBottom .drawer-tile.one {
+        margin-top: 60px;
+    }
+
+    .drawer-tile-footer {
+        margin-top: 60px;
+    }
+
+    .offcanvas-body {
+        padding: 26px 26px 93px;
+    }
+
+    .contact-phone {
+        padding-top: 40px;
+        padding-right: 10px;
+        width: 48.5%;
+    }
+
+    .contact-phone p {
+        font-size: 20px !important;
+        line-height: 22px;
+    }
+
+    #ready-almost,
+    #drawer .d-lg-block {
+        display: inline !important;
+    }
+}
+
+@media (max-width: 1024px) {
+	#offcanvasBottom h3 {
+		font-family: Merriweather;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 28px;
+	}
+
+	#offcanvasBottom .offcanvas-body p {
+		font-family: IBM Plex Sans;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22.4px;
+		text-align: left;
+	}
+
+	#offcanvasBottom .offcanvas-body .drawer-tile h3 {
+		font-family: Merriweather;
+		font-size: 16px;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 22.4px;
+	}
+
+	.drawer-tile button {
+		font-size: 16px;
+	}
+
+	.offcanvas-footer {
+		font-family: Merriweather;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 22.4px;
+		text-align: left;
+
+	}
+
+	#offcanvasBottom1 .offcanvas-body {
+		padding: 0 20px 40px;
+	}
+
+	.offcanvas-body .drawer-tile button,
+	.offcanvas-body .drawer-tile .btn.w-full,
+	.offcanvas-body .wForm .primaryAction,
+	.offcanvas-body .wForm .secondaryAction {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+}
+
+.contact-drawer-wrapper {
+	position: relative;
+	z-index: 10000;
+}
+
+.contact-drawer-wrapper.scroll_load #drawer {
+	transform: translateY(100%);
+}
+
+html.has-header-fixed .contact-drawer-wrapper.scroll_load #drawer {
+	transform: translateY(0%);
+}
+
+.wForm .actions {
+	margin-top: 0px !important;
+}
+
+@media (min-height: 850px) {
+    .contact-phone {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #820361;
+    }
+}
+
+.contact-drawer-wrapper .wFormContainer a {
+    text-decoration: none;
+    font-size: 100%;
+    color: #ffffff !important;
+}
+
+
+
+
+
+/* From theme customizer */
+body .sh-block-wrapper.footer .sh-block-inner #offcanvasBottom2 .wForm form input,
+.wForm input[type=text]:focus-visible,
+.wForm input[type=time]:focus-visible,
+.wForm input[type=number]:focus-visible, 
+.wForm input[type=url]:focus-visible, 
+.wForm input[type=email]:focus-visible, 
+.wForm input[type=password]:focus-visible, 
+.inputWrapper:focus-visible,
+body .sh-block-wrapper.footer .sh-block-inner #offcanvasBottom2 .wForm textarea:focus-visible,
+body .sh-block-wrapper.footer .sh-block-inner #offcanvasBottom2 .wForm textarea
+{
+    background-color: #630349 !important;
+    color: white !important;
+}
+#offcanvasBottom2 .new-placeholder,
+#offcanvasBottom2 .wForm input::placeholder,
+#offcanvasBottom2 .wForm ::-webkit-input-placeholder {
+    top: 0px !important;
+    left: 9px !important;
+    transform: none !important;
+    color: white !important;
+}
+#offcanvasBottom2 .wForm textarea {
+    background: #630349 !important;
+}
+#offcanvasBottom2 .wForm textarea::placeholder {
+    color: white !important;
+}
+body .sh-block-wrapper.footer .sh-block-inner #offcanvasBottom2 .wForm textarea {
+    padding-top: 35px;
+}
+
+
+#offcanvasBottom2 .wForm input#tfa_3::placeholder, #offcanvasBottom2 .wForm input#tfa_3::-webkit-input-placeholder {
+    /* Effectively display: none */
+    color: #630349 !important;
+    z-index: 3;
+}
+#tfa_3-D span.placeholder {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    line-height: 1;   
+    z-index: 4;
+}
